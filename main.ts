@@ -4,6 +4,8 @@
 // to <OUTPUT_DIR>/entry.txt, where OUTPUT_DIR is taken from the
 // MAKEFUN_OUTPUT_DIR environment variable, defaulting to '/output'.
 // The program needs no input files and works from any working directory.
+// The gate counts the file's characters, so the line is written exactly
+// as-is: no added newline, no extra whitespace, no second line.
 
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
